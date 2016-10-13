@@ -3,7 +3,7 @@
 # tbjers/dot-zsh ellipsis package
 
 pkg.link() {
-  files=(inputrc vimrc vimgitrc)
+  files=(inputrc vimrc)
 
   for file in ${files[@]}; do
     fs.link_file $file
@@ -19,7 +19,7 @@ pkg.install() {
   curl -LSso $PKG_PATH/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
   # install dependencies
-  cd ~/.vim/bundle
+  cd $PKG_PATH/bundle
   git.clone git@github.com:altercation/vim-colors-solarized.git
   git.clone git@github.com:bling/vim-airline.git
   git.clone git@github.com:tpope/vim-fugitive.git
@@ -38,7 +38,6 @@ pkg.install() {
   git.clone git@github.com:kchmck/vim-coffee-script.git
   git.clone git@github.com:tmux-plugins/tpm.git
   git.clone git@github.com:joshdick/onedark.vim.git
-  git.clone git@github.com:joshdick/airline-onedark.vim.git
   git.clone git@github.com:vim-airline/vim-airline-themes.git
 }
 
