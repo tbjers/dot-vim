@@ -46,7 +46,7 @@ helper() {
   $1
 
   # run command for each addon
-  for addon in ~/.vim/addons/*; do
+  for addon in ~/.vim/bundle/*; do
     # git status/push only repos which are ours
     if [ $1 = "git.pull" ] || [ "$(cat $addon/.git/config | grep url | grep $ELLIPSIS_USER)" ]; then
       cd $addon
