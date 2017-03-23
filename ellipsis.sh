@@ -39,6 +39,7 @@ pkg.install() {
   git.clone git@github.com:tmux-plugins/tpm.git
   git.clone git@github.com:joshdick/onedark.vim.git
   git.clone git@github.com:vim-airline/vim-airline-themes.git
+  git clone git@github.com:lloeki/vim-one-colorschemes.git
 }
 
 helper() {
