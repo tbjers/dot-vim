@@ -20,7 +20,6 @@ pkg.install() {
 
   # install dependencies
   cd $PKG_PATH/bundle
-  git.clone git@github.com:altercation/vim-colors-solarized.git
   git.clone git@github.com:bling/vim-airline.git
   git.clone git@github.com:tpope/vim-fugitive.git
   git.clone git@github.com:digitaltoad/vim-jade.git
@@ -37,9 +36,8 @@ pkg.install() {
   git.clone git@github.com:derekwyatt/vim-scala.git
   git.clone git@github.com:kchmck/vim-coffee-script.git
   git.clone git@github.com:tmux-plugins/tpm.git
-  git.clone git@github.com:joshdick/onedark.vim.git
   git.clone git@github.com:vim-airline/vim-airline-themes.git
-  git clone git@github.com:lloeki/vim-one-colorschemes.git
+  git clone git@github.com:rakr/vim-one.git
 }
 
 helper() {
