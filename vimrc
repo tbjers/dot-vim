@@ -77,7 +77,7 @@ nnoremap <silent> <leader>w :bw<CR>
 nnoremap <silent> <C-s> :update<CR>
 nnoremap <silent> <leader>l :set list!<CR>
 
-autocmd BufNewFile,BufRead {Gemfile,Vagrantfile,Berksfile} set filetype=ruby
+autocmd BufNewFile,BufRead {Gemfile,Vagrantfile,Berksfile,Podfile} set filetype=ruby
 
 function! ToggleVExplorer()
   if exists("t:expl_buf_num")
